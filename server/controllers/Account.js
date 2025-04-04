@@ -7,7 +7,7 @@ const signupPage = (req, res) => res.render('signup');
 const logout = (req, res) => {
   req.session.destroy();
   res.redirect('/');
-}
+};
 
 const login = (req, res) => {
   const { username, pass } = req.body;
